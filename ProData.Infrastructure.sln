@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "src\Infrastructur
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Tests", "src\Infrastructure.Common\Common.Tests\Common.Tests.csproj", "{0C99202E-4D5B-44C0-977C-AC56DA644899}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SlnRoot", "_SlnRoot", "{D2EE2E3C-D5C6-4A4C-BF18-0A1C08054BED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
