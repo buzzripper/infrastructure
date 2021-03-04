@@ -1,22 +1,28 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <AssemblyName>ProData.Infrastructure.Common</AssemblyName>
-        <RootNamespace>ProData.Infrastructure.Common</RootNamespace>
-    </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>ProData.Infrastructure.Common</AssemblyName>
+    <RootNamespace>ProData.Infrastructure.Common</RootNamespace>
+  </PropertyGroup>
 
     <PropertyGroup>
         <PackageId>ProData.Infrastructure.Common</PackageId>
         <Authors>ProData Media</Authors>
+        <Owners>buzzripper</Owners>
         <Company>ProData Media</Company>
         <Title>ProData.Infrastructure.Common</Title>
+        <Description>Common package for ProData infrastructure.</Description>
         <PackageTags>.Net Core;ProData Media</PackageTags>
         <PackageDescription>Common package for core components.</PackageDescription>
         <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <PackageVersion>1.0.0</PackageVersion>
+        <Version>1.0.0</Version>
         <RepositoryUrl>https://github.com/buzzripper/infrastructure</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <IsPackable>true</IsPackable>
     </PropertyGroup>
+
 
 </Project>
