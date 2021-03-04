@@ -16,7 +16,7 @@
         <PackageTags>.Net Core;ProData Media</PackageTags>
         <PackageDescription>Common package for core components.</PackageDescription>
         <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-        <PackageVersion>1.0.1</PackageVersion>
+        <PackageVersion>1.0.2</PackageVersion>
         <Version>1.0.2</Version>
         <RepositoryUrl>https://github.com/buzzripper/infrastructure</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
