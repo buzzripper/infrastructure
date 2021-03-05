@@ -20,9 +20,8 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
-    - name: Publish  
-      uses: brandedoutcast/publish-nuget@v2.5.2  
-      with:   
-       PROJECT_FILE_PATH: src/Infrastructure.Common/Common/Common.csproj  
-       NUGET_KEY: ${{secrets.NUGET_API_KEY}}  
+      run: dotnet build --no-restore -c Release
+    - name: Publish Nuget to GitHub registry
+      run: dotnet nuget push ./src/Infrastructure.Common/Common/bin/Release/*.nupkg -k ${GITHUB_TOKEN} -s https://nuget.pkg.github.com/buzzripper/index.json --skip-duplicate --no-symbols true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
