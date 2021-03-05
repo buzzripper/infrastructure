@@ -22,6 +22,6 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Publish Nuget to GitHub registry
-        run: dotnet nuget push ./src/Infrastructure.Common/Common/bin/Release/*.nupkg -k ${GITHUB_TOKEN} -s https://nuget.pkg.github.com/<organization>/index.json --skip-duplicate --no-symbols
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: dotnet nuget push ./src/Infrastructure.Common/Common/bin/Release/*.nupkg -k ${GITHUB_TOKEN} -s https://nuget.pkg.github.com/<organization>/index.json --skip-duplicate --no-symbols
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
